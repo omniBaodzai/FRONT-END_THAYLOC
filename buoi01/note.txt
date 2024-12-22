@@ -1,0 +1,51 @@
+I. Front-end
+1. html: xây dựng bố cục (cái khung) của trang web
+
+2. css: làm đẹp cho trang web 
+
+3. javascipt: tương tác với người dùng
+
+4. jquery: thư viện (được viết bằng js) giúp viết code js nhanh hơn
+
+5. responsive: tương thích với các thiết bị khác
+
+6. bootstrap: giúp làm responsive nhanh
+
+7. ajax: là công nghệ sử dụng js để cập nhật các
+phần tử mà không cần load lại trang web, không seo
+
+
+8. PSD to HTML/CSS: kiến trúc sư thiết kế bản vẽ, bộ phận
+thi công chuyển từ thiết kế sang trang web cụ thể
+
+9. ReactJS: thư viện mạnh hơn jquery
+
+II. Back-end
+1. Apache - PHP
+- Apache: Là web server
+- PHP: Là ngôn ngữ lập trình chạy trên web server 
+
+2. IIS - .NET
+
+3. Tomcat - Java 
+
+4. My SQL
+
+5. SQL server
+
+6. MongoDB
+
+7. Cassandra
+
+8. Couchbase
+
+9. DynamoDB
+
+III. Môi trường giải lập máy chủ
+1. WAMPP (Windows Apache My SQL/MariaDB PHP Peri)
+
+2. LAMPP (Linux Apache My SQL/MariaDB PHP Peri)
+
+3. MAMPP: (Mac Apache My SQL/MariaDB PHP Peri)
+
+4. XAMPP: (Cross platfrom Apache My SQL/MariaDB PHP Peri)
