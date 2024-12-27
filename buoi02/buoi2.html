@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Phần đầu -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Buổi 2</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="/buoi02/images.ico" type="image/x-icon">
+</head>
+
+<!-- Phần thân -->
+<body>
+	<!-- Thẻ form:
+		+) action: nơi chỉ định file xử lý dữ liệu được đẩy lên server
+		+) method gồm:
+			+) get
+			+) post: hầu hết các form dùng post
+		+) Phải có thuộc tính name thì mới đẩy dữ liệu lên server được
+		+) autofocus: không cần phải nhấn vô ô nhập dữ liệu
+		-->
+	<h1>Form đăng nhập</h1>
+	<form action="processLogin.php" method="POST" autofocus>
+
+		<!-- Login-->
+		Username: <input type="text" name="username" autofocus> <br> <br>
+		Password: <input type="password" name="password"> <br> <br>
+
+		<!-- Chọn:
+		+) Giá trị của value: vn, lao, cpc sẽ được đẩy lên server 
+		+) Còn nội dung: thì hiển thị lên màn hình
+		-->
+		<h2>Chọn quốc gia</h2>
+		<select name="country">
+			<option value="vn">Việt nam</option>
+			<option value="lao">Lào</option>
+			<option value="cpc">Campuchia</option>
+		</select>
+
+		<!-- Do có thẻ h2, nên tự xuống dòng -->
+
+		<!-- Feedback: tự xuống dòng -->
+		<h2>Feedback</h2>
+		<textarea name="message" cols="30" rows="10"
+			placeholder="Làm ơn nhập feedback của bạn đê, chém đầu giờ"></textarea>
+		<br>
+
+		<!-- Thẻ button (html5):
+			+) button type="submit": Đẩy dữ liệu toàn bộ trong form lên server
+			+) button type="button": không có chức năng submit form, chỉ dùng
+			để xử lý sự kiện, có liên quan đến js
+			+) button type="reset": có nhiều chỗ nhập liệu, cần phải nhập lại nếu sai
+			-->
+		<button type="submit">Login</button> <br>
+		<button type="button">Click me</button> <br>
+		<button type="reset">Reset</button>
+
+
+
+		<!-- ol: order list - danh sách có thứ tự -->
+		<h2>Danh sách có thứ tự</h2>
+		<ol type="a">
+			<!-- list item - phần tử trong danh sách -->
+			<li>Task1</li>
+			<li>Task2</li>
+			<li>Task3</li>
+		</ol>
+
+		<!-- ul: un-order list - danh sách không có thứ tự -->
+		<h2>Danh sách không có thứ tự</h2>
+		<ul>
+			<li>Laptop</li>
+			<li>Điện thoại</li>
+			<li>Phụ kiện</li>
+		</ul>
+
+		<!-- Thẻ div -->
+		<h2>Thẻ div</h2>
+		<div style="border:1px solid black">
+			<b>B1</b>
+			<br>
+			<i>B2</i>
+		</div>
+
+		<!-- Thẻ span: hỗ trợ lưu trữ phần tư -->
+		<h2>Thẻ span</h2>
+		<span style="background-color: red;">Birthday</span>
+
+
+		<!-- Thẻ input (html4):
+			+) Không có thẻ đóng
+			+) Dùng value để hiển thị
+			-->
+		<h2>Thẻ input</h2>
+		<input type="submit" value="Login"> <br>
+		<input type="button" value="Click me"> <br>
+		<input type="reset" value="Reset"> <br>
+		<label for="male">Nam</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Nữ</label>
+        <input type="radio" id="female" name="gender" value="female">
+
+		<!-- Thẻ label: click vô username thì cũng sẽ hiện chức năng gõ 
+			+) Sử dụng for="cùng giá trị" để liên kết Username + khung nhập liệu
+			-->
+		<h2>Thẻ label</h2>
+		<label for="id1">Username</label>
+		<input type="text" id="id1" name="username">
+
+		<br>
+
+		<!-- Thẻ iframe: nhúng trang web khác vô trang web của mình -->
+		<!-- <iframe src="https://vnexpress.net/" frameborder="0" width="100%" height="500px"></iframe> -->
+		<h2>Thẻ iframe</h2>
+
+		<!-- Google map -->
+		<h3>Google map</h3>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5004942099727!2d106.62426591406816!3d10.772926692323889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752dcdd60efd3f%3A0x8e16362a8a43158e!2zVGjhuqd5IEzhu5ljIGThuqF5IGzhuq1wIHRyw6xuaCB3ZWI!5e0!3m2!1svi!2s!4v1622034175982!5m2!1svi!2s"
+			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		<br>
+
+		<!-- Youtube -->
+		<h3>Youtube</h3>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/IUYTyP20bE0" title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe>
+
+		<!-- Thẻ video
+			+) controls: thao tác trên viideo
+			-->
+		<h2>Thẻ video</h2>
+		<video src="video.mp4" controls width="400px"></video>
+
+		<!-- Thẻ audio -->
+		<h2>Thẻ audio</h2>
+		<audio src="audio.mp3" controls></audio>
+
+		<!-- Thẻ figure: Caption cho hình ảnh -->
+		<h2>Thẻ figure</h2>
+		<figure>
+			<img src="images/con-cho-1.jpg" alt="">
+			<figcaption>H1. Đây là con chó hah!!!</figcaption>
+		</figure>
+
+		<!-- Thẻ picture: tùy chỉnh hình dựa vào kích thước -->
+		<h2>Picture</h2>
+		<picture>
+			<source media="(min-width:992px)" srcset="images/con-cho-1.jpg">
+			<source media="(min-width:768px)" srcset="images/con-cho-2.jpg">
+			<img src="images/con-cho-3.jpg" alt="">
+		</picture>
+	</form>
+</body>
+
+</html>
