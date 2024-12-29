@@ -1,0 +1,80 @@
+1. CSS/style/fortmat = giống nhau hết
+
+2. Có 3 kiểu style
+a. style inline: CSS trực tiếp trong thẻ html
+b. style internal: CSS trong phần head của trang html
+c. style external: CSS nằm riêng
+
+3. Trước cặp dấu {} là selector - là phần tử html được chọn
+- Bên trong {} là các thuộc tính CSS
+- Mỗi thuộc tính CSS có 2 phần: tên thuộc tính và giá trị của thuộc tính
+- Mỗi dòng CSS phải kết thúc bằng dấu;
+
+4. Phân loại selector
+***** Type (tag - thẻ) selector *****
+-------------------------------------------
+<div>ABC</div>
+-------------------------------------------
+div {
+    background-color: red;
+}
+-------------------------------------------
+
+***** id selector: Đặc điểm là dấu thăng, id không được trùng nhau:
+-------------------------------------------
+<div id="id1">ABC</div>
+<div id="id2">ABC</div>
+-------------------------------------------
+#id1, #id2 {
+    background-color: rgb(34, 255, 0);
+}
+-------------------------------------------
+
+***** class selector: Đặc điểm là dấu chấm, class được trùng *****
+-------------------------------------------
+<div class="class1">ABC</div>
+<div class="class1">ABC</div>
+-------------------------------------------
+.class1 {
+    background-color: rgb(223, 14, 49);
+}
+-------------------------------------------
+
+***** Thuộc tính selector *****
+-------------------------------------------
+<span>A4</span>
+Firstname: <input type="text"> <br>
+Lastname: <input type="text"> <br>
+Password: <input type="password"> <br>
+-------------------------------------------
+[type=text] {
+    background-color: aqua;
+    color:rgb(228, 19, 19);
+}
+-------------------------------------------
+
+***** span nằm trong trong thuộc tính id có giá trị là id1 *****
+-------------------------------------------
+<div id="id1">
+    <span>Birthday</span>
+</div>
+-------------------------------------------
+#id1 span {
+    color: red;
+}
+-------------------------------------------
+
+***** span là con trực tiếp nằm trong trong
+thuộc tính id có giá trị là id1 *****
+-------------------------------------------
+<div id="id1">
+    <span>Birthday</span> -> được chọn
+    <p>
+        <span>Hello </span>
+    </p>
+</div>
+------------------------------------
+#id1 > span {
+    color: red;
+}
+-------------------------------------------
