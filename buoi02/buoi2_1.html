@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Học lập trình wbe">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <title>Buổi 2</title>
+    </head>
+
+    <body>
+        <!-- Thẻ table: tr*2>td*3 -->
+        <h2>Thẻ table</h2>
+        <table>
+            <!-- Đầu -->
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Giới tính</th>
+                    <th>Nghề nghiệp</th>
+                </tr>
+            </thead>
+
+            <!-- Thân -->
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Huỳnh Lê Bảo</td>
+                    <td>Nam</td>
+                    <td>IT</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lê Thị Hiền</td>
+                    <td>Nữ</td>
+                    <td>Giáo viên</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Thẻ svg-->
+        <h2>Thẻ svg</h2>
+        <!-- Hình tam giác -->
+        <h3>Hình tam giác</h3>
+        <svg width="200px"viewBox="0 0 32 32" style="background-color: yellow;">
+            <path d="M 0 32 L 16 0 L 32 32 Z" fill="transparent" stroke="red" stroke-width="0.5"></path>
+        </svg>
+        
+        <!-- Mũi tên -->
+        <h3>Mũi tên</h3>
+        <svg width="200px"viewBox="0 0 32 32" style="background-color: yellow;">
+            <path d="M 5 16 L 16 0  L 27 16 M 16 0 L 16 27 " fill="transparent" stroke="red" stroke-width="0.5"></path>
+        </svg>
+
+        <!-- Mũi tên -->
+        <h3>Mũi tên</h3>
+        <svg width="200px" viewBox="0 0 32 32" style="background-color: yellow;">
+            <!-- Đường chéo của mũi tên -->
+            <path d="M 5 16 L 16 0 L 27 16" fill="transparent" stroke="red" stroke-width="0.5"></path>
+            <!-- Đoạn đường thẳng nối giữa hai đầu mũi tên -->
+            <line x1="16" y1="0" x2="16" y2="27" stroke="red" stroke-width="0.5" />
+        </svg>
+        
+        <!-- Hình vuông -->
+        <h3>Hình vuông</h3>
+        <svg width="200px"viewBox="0 0 32 32" style="background-color: yellow;">
+            <path d="M 0 16 L 16 16 L 16 0 L 0 0 L 0 16 " fill="transparent" stroke="red" stroke-width="0.5"></path>
+        </svg>
+        
+        <!-- Hình vuông -->
+        <h3>Hình vuông</h3>
+        <svg width="200px"viewBox="0 0 32 32" style="background-color: yellow;">
+            <path d="M 0 0 L 32 0 L 32 0 L 32 32 L 0 32 Z" fill="transparent" stroke="red" stroke-width="0.5"></path>
+        </svg>
+
+        <!-- Symbol -->
+        <h2>Symbol</h2>
+        <svg width="0" hegiht="0" sytle="background-color: yellow;">
+            <!-- define symbol -->
+            <defs>
+                <symbol id="square" viewBox="0 0 32 32">
+                    <path d="M 0 0 L 32 0 L 32 0 L 32 32 L 0 32 Z" fill="transparent" stroke="red" stroke-width="0.5"></path>
+                </symbol>
+
+                <symbol id="triangle" viewBox="0 0 32 32">
+                    <path d="M 0 32 L 16 0 L 32 32 Z" fill="transparent" stroke="red" stroke-width="0.5"></path>
+                </symbol>
+            </defs>
+        </svg>
+
+        <!-- Vị trí -->
+        <h2>Use vị trí 1</h2>
+        <svg width="100px" height="100px" style="background-color: lightblue">
+            <use xlink:href="#square"></use>
+        </svg>
+
+        <h2>Use vị trí 2</h2>
+        <svg width="150px" height="150px" style="background-color: pink">
+            <use xlink:href="#triangle"></use>
+        </svg>
+
+        
+    </body>
+
+</html>

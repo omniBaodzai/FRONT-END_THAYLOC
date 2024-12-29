@@ -6,71 +6,30 @@
         <meta name="description" content="Buổi 2">
         <meta name="keywords" content="Học lập trình web, html">
         <title>Bài tập buổi 2</title>
+   
     </head>
 
     <body>
-        <h1>Đăng ký</h1>
 
-        <form action="../processLogin.php" method="post">
-            <label for="name">Tên:</label>
-            <input type="text" name="username" id="name" placeholder="Nhập tên của bạn">
-            <p>
-                <ul>
-                    <li>Đây là tên sẽ được hiển thị cùng với thông tin của bạn.</li>
-                    <li>Bạn có thể sử dụng bất kỳ tên nào mà bạn muốn.</li>
-                    <li>Sau khi tạo, bạn sẽ không thay đổi được tên này.</li>
-                </ul>
-            </p>
-            
-            <label for="email-add">Địa chỉ email:</label>
-            <input type="email" name="email" id="email-add" placeholder="Nhập email của bạn"> 
-            <p>
-                Lưu ý điền email cẩn thận. Nếu điền sai, email của bạn không thể đăng ký thành viên (khuyến khích nên dùng Gmail).
-            </p>
-            
-            <hr>
 
-            <label for="password">Mật khẩu:</label>
-            <input type="password" name="password" id="password" placeholder="Nhập mật khẩu của bạn"> 
-            <label for="confirm-password">Xác nhận mật khẩu:</label>
-            <input type="password" name="confirm_password" id="confirm-password" placeholder="Xác nhận mật khẩu">
-            <p>Nhập mật khẩu và xác nhận bằng cách nhập lại mật khẩu bên dưới.</p>
-
-            <hr>
-
-            <label>Giới tính:</label><br>
-            <input type="radio" name="gender" id="male" value="male">
-            <label for="male">Nam</label><br>
-
-            <input type="radio" name="gender" id="female" value="female">
-            <label for="female">Nữ</label><br>
-
-            <input type="radio" name="gender" id="unknown" value="unknown">
-            <label for="unknown">(Không xác định)</label><br>
-
-            <label for="day">Ngày sinh:</label>
-            <input type="number" name="day" id="day" min="1" max="31" placeholder="Ngày">
-            <input type="number" name="year" id="year" min="1900" max="3000" placeholder="Năm">
-
-            <label for="month">Tháng:</label>
-            <select name="month" id="month">
-                <option value="1">Tháng 1</option>
-                <option value="2">Tháng 2</option>
-                <option value="3">Tháng 3</option>
-                <!-- Các tháng khác -->
-            </select>
-
-            <hr>
-            
-            <label for="recaptcha">Xác nhận:</label><br>
-            <img src="recapcha.png" alt="recaptcha" id="recaptcha">
-            
-            <hr>
-            
-            <input type="checkbox" name="terms" id="terms" checked>
-            <label for="terms">Tôi đã đọc kỹ <span style="color:red; font-weight: bold;">Nội dung diễn đàn</span> và tôi hứa sẽ chấp nhận.</label><br>
-
-            <button type="submit" style="color: red;">Đăng ký</button>
-        </form>
+      
+      <table border="1">
+        <tr>
+          <th rowspan="2">Tiêu đề 1</th>
+          <th colspan="2">Tiêu đề 2</th>
+        </tr>
+        <tr>
+          <td>Dữ liệu 1</td>
+          <td>Dữ liệu 2</td>
+        </tr>
+        <tr>
+          <td>Dữ liệu 3</td>
+          <td>Dữ liệu 4</td>
+          <td>Dữ liệu 5</td>
+        </tr>
+      </table>
+      
+      
+          
     </body>
 </html>
