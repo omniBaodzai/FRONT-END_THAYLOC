@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +14,21 @@
 
         <form action="../processLogin.php" method="post">
             <label for="name">Tên:</label>
-            <input type="text" name="username" id="name" placeholder="Nhập tên của bạn" autofocus>
+            <input type="text" name="username" id="name" placeholder="Nhập tên của bạn" autofocus required>
             <p>Đây là tên sẽ được hiển thị cùng với thông tin của bạn
             Bạn có thể sử dụng bất kỳ tên nào mà bạn muốn. <br>
             Sau khi tạo, bạn sẽ không thay đổi được tên này.</p>
             
-            <label for="email-add">Địa chỉ email:</label>
-            <input type="email" name="email" id="email-add" placeholder="Nhập email của bạn" autofocus> <br>
+            <label for="email">Địa chỉ email:</label>
+            <input type="email" name="email" id="email" placeholder="Nhập email của bạn" autofocus required>
             <p>Lưu ý điền email cẩn thận. Nếu điền sai, email của bạn không
             thể đăng ký trành viên (khuyến khích nên dùng gmail)</p>
             
             <hr>
 
             <label for="password">Mật khẩu:</label>
-            <input type="password" name="password" id="password" placeholder="Nhập mật khẩu của bạn"> <br>
+            <input type="password" name="password" id="password" placeholder="Nhập mật khẩu của bạn">
+            <br> <br>
             <label for="confirm-password">Xác nhận mật khẩu:</label>
             <input type="password" name="confirm-password" id="confirm-password" placeholder="Xác nhận mật khẩu">
             <p>Nhập mật khẩu của bạn trong lần đầu tiên và xác nhận nó bằng cách
@@ -45,7 +47,7 @@
             <input type="radio" name="gender" id="unknown" value="unknown">
             <label for="unknown">(Không xác định)</label> <br>
 
-            <label>Ngày sinh:</label>
+            <label for="month">Ngày sinh:</label>
             <select name="month" id="moth">
                 <option value="t1">Tháng 1</option>
                 <option value="t2">Tháng 2</option>
@@ -63,9 +65,11 @@
             <hr>
             
             <input type="checkbox" name="terms" id="terms" checked>
-            <label for="terms">Tôi đã đọc kỹ <span style="color:red; font-weight: bold;">Nội dung diễn đàn</span> và tôi hứa sẽ chấp nhận.</label><br>
+            <label for="terms">Tôi đã đọc kỹ <span style="color:red; font-weight: bold;">
+            Nội dung diễn đàn</span> và tôi hứa sẽ chấp nhận.</label><br>
 
             <button type="submit" style="color: red;">Đăng ký</button>
         </form>
     </body>
+
 </html>
