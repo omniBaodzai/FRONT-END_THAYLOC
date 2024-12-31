@@ -7,6 +7,7 @@
     <meta name="description" content="Buổi 2">
     <meta name="keywords" content="Học lập trình web, html">
     <title>Bài tập buổi 2</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
     - Trong một trang web: Chỉ có một thẻ được autofocus
     - Những gì người dùng nhập thì không cần value
     - Còn tích chọn thì dùng value
-    
+    - http://localhost:5500/buoi02/baitap1/index.html
     -->
     <form action="../processLogin.php" method="POST">
         <label for="name">Tên:</label>
@@ -74,12 +75,13 @@
         <!-- <label for="recapcha">Xác nhận:</label> <br>
         <img src="recapcha.png" alt="recapcha" id="recapcha"> -->
         <span>Xác nhận</span>
+        <div class="g-recaptcha" data-sitekey="6LcaPKoqAAAAAEAmHEGJC2Lvl8fh_-AmSsVKeJv3"></div>
 
         <hr>
 
         <input type="checkbox" name="terms" id="terms" checked>
         <label for="terms">Tôi đã đọc kỹ <span style="color:red; font-weight: bold;">
-                Nội dung diễn đàn</span> và tôi hứa sẽ chấp nhận.</label><br>
+        Nội dung diễn đàn</span> và tôi hứa sẽ chấp nhận.</label><br>
 
         <button type="submit" style="color: red;">Đăng ký</button>
     </form>
