@@ -1,0 +1,49 @@
+#id1 {
+	/*background-color: red;*/
+	/*background-color: rgb(175, 41, 27);*/
+	/*background-color: rgb(65, 212, 212);*/
+	/*background-color: #2A7FE1;*/
+	background-color: rgba(255, 0, 0, 0.8);
+	width: 200px;
+	height: 100px;
+	padding: 5px 6px;
+	border: 1px solid black;
+	margin:20px;
+}
+
+#id2 {
+	background-color: yellow;
+	width: 800px;
+	height: 200px
+}
+
+#id2 > div {
+	background-color: red;
+	/*width: 40%;*/
+
+	/*1em = 1 font-size của chính phần tử đó*/
+	/*width: 20em;*/
+
+	/*1rem = 1 font-size của phần tử gốc html*/
+	/*mặc định font-size của html gốc là 16px*/
+	width: 20rem;
+	font-size: 15px;
+	height: 100px;
+}
+
+#id3 {
+	width: 400px;
+	height: 200px;
+	background-image: url("../images/con-cho-1.jpg");
+	background-size: cover;
+	margin-bottom: 50px;
+}
+
+#id4 {
+	width:200px;
+	height: 100px;
+	background-color: red;
+	/*box-shadow: 10px 15px 5px 7px grey;*/
+	box-shadow: 0 0 5px 7px grey;
+	margin-bottom: 40px;
+}
