@@ -1,28 +1,10 @@
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: #2e3b4e; /* Nền tối để tuyết nổi bật */
-}
-
-#snow-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-}
-.snowflake {
-    position: absolute;
-    top: 0;
-    color: white;
-    user-select: none;
-    animation: fall linear infinite;
-}
-
-@keyframes fall {
-    to {
-        transform: translateY(100vh);
-    }
-}
+.myTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .myTable th, .myTable td {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  

@@ -1,0 +1,54 @@
+#id1 {
+	/*background-color: red;*/
+	/*background-color: rgb(175, 41, 27);*/
+	/*background-color: rgb(65, 212, 212);*/
+	/*background-color: #2A7FE1;*/
+	background-color: rgba(255, 0, 0, 0.8);
+	width: 200px;
+	height: 200px;
+	/* padding: 20px; */
+	/* padding: 5px 6px 7px 8px; top right bottom left*/
+	padding: 5px 6px; /*top = bottom = 5px và right = left = 6px */
+	border: 5px solid yellow;
+	margin: 20px;
+}
+
+#id2 {
+	background-color: yellow;
+	width: 800px;
+	height: 200px;
+}
+
+/* #id2 > div {
+	background-color: red;
+	width: 40%; Giá trị % là so với cha trực tiếp của nó
+	height: 100px;
+} */
+
+/* #id2 > div {
+	background-color: red;
+	1em = 1 font-size của chính phần tử đó 
+	 - 20em = 20 font-size (mà 1 font-size=15px) 
+	=> 20em = 20x15=300px(weight) 
+	width: 20em;
+	font-size: 15px;
+	height: 100px;
+} */
+
+/* #id2 > div {
+	background-color: red;
+	1rem = 1 font-size của phần tử gốc html
+	mặc định font-size của html gốc là 16px
+	=> 20rem = 20x16=320px(weight) 
+	width: 20rem;
+	font-size: 15px; cho dù ở đây 15 thì kệ
+	height: 100px;
+} */
+
+#id3 {
+	width: 400px;
+	height: 200px;
+	background-image: url('../images/con-cho-1.jpg') ;
+	background-size: cover;
+	margin-bottom: 50px;
+}
